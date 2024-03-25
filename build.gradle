@@ -42,6 +42,9 @@ dependencies {
 
     // junit
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    
+    //sql로그 - logging: log4j2최신버전 - sql문이 console에 나온다. -오류시 안나옴
+    implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
 	
 }
 

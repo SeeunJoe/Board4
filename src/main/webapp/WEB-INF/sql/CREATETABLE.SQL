@@ -1,4 +1,4 @@
--- 메뉴 목록
+----------------- 메뉴 목록---------------------
 CREATE  TABLE   MENUS (
      MENU_ID     VARCHAR2(6)   PRIMARY KEY
     ,MENU_NAME   VARCHAR2(100)
@@ -8,7 +8,7 @@ CREATE  TABLE   MENUS (
 INSERT  INTO   MENUS  VALUES ('MENU01', 'JAVA', 1 );
 COMMIT;
 
---회원정보
+-------------------회원정보----------------------
 
 CREATE TABLE TUSER(
   
@@ -23,7 +23,7 @@ CREATE TABLE TUSER(
   
   COMMIT;
   
-  
+  --이 방식은 springboot에서 안먹힘 -> between and 사용하기
   10,000P <= VIP
   6,001 <= 우수회원 <= 8,000
   4,001 <= 일반회원 <= 6,000

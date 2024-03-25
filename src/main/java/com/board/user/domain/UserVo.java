@@ -18,7 +18,7 @@ public class UserVo {
 	@NonNull
 	private String username;
 	private String email;
-	private String upoint;
+	private int    upoint;  //원래는 int로 해야하는데 오류발생
 	private String indate;
 
 }
