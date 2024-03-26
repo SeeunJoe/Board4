@@ -29,3 +29,14 @@ CREATE TABLE TUSER(
   4,001 <= 일반회원 <= 6,000
   2,001 <= 준 회 원 <= 4,000
       0 <=  손  님  <= 2,000
+      
+-----------------검색------------------
+    
+    SELECT     USERID, USERNAME, EMAIL, UPOINT,
+               T0_CHAR(INDATE, 'YYYY-MM-DD') AS INDATE                
+    FROM       TUSER
+    ORDER BY   USERID ASC;
+    
+    SELECT   *,TO_CHAR(INDATE,'YYYY-MM-DD')
+    FROM     TUSER
+    ORDER BY USERID ASC;
