@@ -60,7 +60,7 @@
 	 </tr>
 	 <tr>
 	   <td>가입일</td>
-	   <td><input type="text" name="indate" value=${ now } readonly/></td>
+	   <td><input type="text" name="indate" value=${ now } readonly  /></td>
 	 </tr>
 	 <tr>
 	   <td colspan="2">

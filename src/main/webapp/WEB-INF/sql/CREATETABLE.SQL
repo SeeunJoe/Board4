@@ -39,3 +39,4 @@ CREATE TABLE TUSER(
    WHEN UPOINT BETWEEN 2001 AND 4000  THEN '준회원'
    WHEN UPOINT BETWEEN    0 AND 2000  THEN '손님'
                                         END  AS UPT  
+                                        
