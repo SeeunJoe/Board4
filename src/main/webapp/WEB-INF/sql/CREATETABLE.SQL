@@ -23,20 +23,19 @@ CREATE TABLE TUSER(
   
   COMMIT;
   
-  --이 방식은 springboot에서 안먹힘 -> between and 사용하기
+  --이 방식은 springboot에서 적용되지 않음 -> between  and 사용하기
   10,000P <= VIP
   6,001 <= 우수회원 <= 8,000
   4,001 <= 일반회원 <= 6,000
   2,001 <= 준 회 원 <= 4,000
       0 <=  손  님  <= 2,000
-      
------------------검색------------------
-    
-    SELECT     USERID, USERNAME, EMAIL, UPOINT,
-               T0_CHAR(INDATE, 'YYYY-MM-DD') AS INDATE                
-    FROM       TUSER
-    ORDER BY   USERID ASC;
-    
-    SELECT   *,TO_CHAR(INDATE,'YYYY-MM-DD')
-    FROM     TUSER
-    ORDER BY USERID ASC;
+     
+               ▽
+               
+  CASE
+   WHEN UPOINT BETWEEN 8001 AND 9999999999 THEN 'VIP'
+   WHEN UPOINT BETWEEN 6001 AND 8000  THEN '우수회원'
+   WHEN UPOINT BETWEEN 4001 AND 6000  THEN '일반회원'
+   WHEN UPOINT BETWEEN 2001 AND 4000  THEN '준회원'
+   WHEN UPOINT BETWEEN    0 AND 2000  THEN '손님'
+                                        END  AS UPT  

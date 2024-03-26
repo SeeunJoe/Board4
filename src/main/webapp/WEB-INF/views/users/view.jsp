@@ -30,7 +30,7 @@
       font-weight: bold;
    }
    input[readonly]{
-      background : #EEEEEE;
+      background : #EEE;
    }
       
 
